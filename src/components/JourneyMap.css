@@ -1,0 +1,206 @@
+.journey-map {
+  width: 100%;
+  padding-top: 40px;
+}
+
+.journey-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.blocks-left,
+.blocks-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.blocks-left {
+  align-items: flex-end;
+  padding-right: 20px;
+}
+
+.blocks-right {
+  align-items: flex-start;
+  padding-left: 20px;
+  padding-top: 70px;
+}
+
+/* Journey Block Styles */
+.journey-block {
+  cursor: pointer;
+  position: relative;
+  margin-bottom: 70px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.journey-block .block-content {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 16px 16px 16px 24px;
+  position: relative;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.journey-block.current .block-content {
+  border-color: #f56d3b;
+  border-width: 2px;
+}
+
+/* Flag Container */
+.flag-container {
+  position: absolute;
+  top: -34px;
+  width: 48px;
+  height: 63px;
+}
+
+.flag-icon {
+  width: 48px;
+  height: 63px;
+}
+
+.block-number {
+  position: absolute;
+  top: 2px;
+  left: 22px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Block Title */
+.block-title {
+  margin: 8px 0 12px 36px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  line-height: 1.4;
+}
+
+/* Skills Container */
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 6px;
+  margin-left: 36px;
+}
+
+.skills-label {
+  font-size: 12px;
+  color: #666;
+  font-weight: 500;
+  margin-right: 4px;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.skill-tag {
+  background: #f5f5f5;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  padding: 4px 10px;
+  font-size: 11px;
+  color: #555;
+}
+
+.journey-block.current .skill-tag {
+  background: #fff5f0;
+  border-color: #f56d3b;
+  color: #c53500;
+}
+
+/* Connector Line */
+.connector {
+  position: absolute;
+  top: 50%;
+  display: flex;
+  align-items: center;
+  width: 60px;
+}
+
+.journey-block.left .connector {
+  right: -60px;
+  flex-direction: row;
+}
+
+.journey-block.right .connector {
+  left: -60px;
+  flex-direction: row-reverse;
+}
+
+.dotted-line {
+  flex: 1;
+  height: 0;
+  border-top: 2px dotted #999;
+}
+
+.connector-dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #333;
+  box-shadow: 0 0 0 2px #333;
+}
+
+/* Center Path */
+.center-path {
+  width: 100px;
+  min-width: 50px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 0 30px;
+}
+
+.path-inner {
+  width: 60px;
+  background: linear-gradient(180deg, #2a2a2a 0%, #1a1a1a 100%);
+  border-radius: 40px;
+  position: relative;
+  height: 100%;
+}
+
+.path-dashed-line {
+  position: absolute;
+  left: 50%;
+  top: 0px;
+  bottom: 0px;
+  width: 0;
+  border-left: 2px dashed white;
+  transform: translateX(-50%);
+}
+
+.path-side-line {
+  position: absolute;
+  top: 25px;
+  bottom: 25px;
+  width: 0;
+  border-left: 2px solid rgb(194, 137, 32);
+  transform: translateX(-50%);
+}
+
+.path-side-line-left {
+  left: 4px;
+}
+
+.path-side-line-right {
+  right: 4px;
+}
+
+.path-marker {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}

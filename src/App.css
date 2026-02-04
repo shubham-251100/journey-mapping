@@ -1,0 +1,36 @@
+.app-container {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.background-svg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: -1;
+}
+
+.content-wrapper {
+  position: relative;
+  z-index: 1;
+  padding: 30px 0px 0px 0px;
+  min-height: 100vh;
+}
+
+.app-header {
+  margin-bottom: 50px;
+  margin-left: 100px;
+}
+
+.logo-image {
+  height: 50px;
+  width: auto;
+}
+
+.main-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}

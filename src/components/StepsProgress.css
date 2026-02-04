@@ -1,0 +1,39 @@
+.steps-progress {
+  margin-bottom: 30px;
+  margin-left: 100px;
+}
+
+.steps-text {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  margin-bottom: 8px;
+}
+
+.steps-current {
+  font-size: 18px;
+  font-weight: 700;
+  color: #333;
+}
+
+.steps-total {
+  font-size: 14px;
+  font-weight: 500;
+  color: #f56d3b;
+}
+
+.progress-track {
+  width: 100%;
+  max-width: 450px;
+  height: 6px;
+  background: #e0e0e0;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #f56d3b;
+  border-radius: 2px;
+  transition: width 0.3s ease;
+}
